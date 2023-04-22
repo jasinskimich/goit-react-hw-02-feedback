@@ -9,13 +9,7 @@ class FeedbackOptions extends Component {
       <div className={styles['feedback-options']}>
         {Object.keys(options).map(option => (
           <button
-            className={
-              option === 'good'
-                ? styles['button-green']
-                : option === 'neutral'
-                ? styles['button-grey']
-                : styles['button-red']
-            }
+            className={styles['button-grey']}
             key={option}
             onClick={() => onLeaveFeedback(option)}
           >
